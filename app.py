@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_patients():
     conn = get_db()
     cur = conn.cursor()
-    cur.execute("SELECT id, name, ssn, diagnosis FROM patients")
+    cur.execute("SELECT id, name, diagnosis FROM patients")
     rows = cur.fetchall()
     return jsonify(rows)
 
