@@ -1,0 +1,7 @@
+database:
+  host: localhost
+  port: 5432
+  name: patients
+  encryption:
+    at_rest: none
+    in_transit: none
